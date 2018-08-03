@@ -1,6 +1,7 @@
-\section{Decken auf Wänden}
+
 
 	\begin{minipage}{0.5\linewidth}
+		\section{Decken auf Wänden}
 		
 		\textbf{Flächentragwerke:}
 			
@@ -52,8 +53,7 @@
 		\end{itemize}
 		
 	\end{minipage}
-
-	\begin{minipage}{\linewidth}
+	\begin{minipage}{0.5\linewidth}
 		
 		\subsection{Platten}
 			
@@ -67,11 +67,24 @@
 			
 			
 	\end{minipage}
+\begin{minipage}{0.5\linewidth}
+	
+	 $ \frac{kN}{mm^2} \cdot 10^6 = \frac{kN}{m^2} $ 
+	
+	\begin{wrapfigure}{L}{0.3\linewidth}
+		\includegraphics[width=\linewidth]{images/Dreieck.PNG}
+	\end{wrapfigure}
+	
+	$ \frac{sin \gamma}{c} = \frac{sin \beta}{b} $ \\
+	$ a^2 = b^2 + c^2 - 2bc \cdot cos \alpha $ \\
+	$ b^2 = a^2 + c^2 - 2ac \cdot cos \beta $
+	
+\end{minipage}
 	\begin{minipage}{0.65\linewidth}
 		
 		\subsubsection{\textcolor{red}{Elastische Plattentheorie} Schnittkräfte und Spannungen}
 		
-			\begin{tabular}{|lp{0.3\linewidth}|}
+			\begin{tabular}{|lp{0.4\linewidth}|}
 					
 					\multicolumn{2}{c}{\textbf{Biegemomente und Normalkräft}} \\
 					
@@ -96,20 +109,21 @@
 		
 		
 	\end{minipage}
-	\begin{minipage}{0.35\linewidth}
+
+	\begin{minipage}{0.55\linewidth}
 		
 		\subsubsection{Streifenmethode}
 		
-		\begin{wrapfigure}{L}{0.2\linewidth}
-			\includegraphics[width=\linewidth]{images/DW4Achse.PNG}
-		\end{wrapfigure}
+%		\begin{wrapfigure}{L}{0.4\linewidth}
+			\includegraphics[width=0.4\linewidth]{images/DW4Achse.PNG}
+%		\end{wrapfigure}
 	
 		Gleichgewicht: q = q$_x$ + q$_y$ \\
 		Verträglichkeit: grösste Plattendruchbiegung: w$_x$ = w$_y$ \\
 		$ \rightarrow w = \frac{M}{EI}; w_x = \frac{5 \cdot q_x \cdot l_x^4}{384 \cdot E \cdot I}  \rightarrow $ Verträglichkeit: $ q_x \cdot l_x^4 = q_y \cdot l_y^4 $ \\
 		
-%	\end{minipage}
-%	\begin{minipage}{0.2\linewidth}
+	\end{minipage}
+	\begin{minipage}{0.4\linewidth}
 		
 		
 		
@@ -133,20 +147,21 @@
 			\textbf{Drillsteife Quadratplatte nach elastischer Plattentheorie, Eckkräfte} 
 			
 			$ \rightarrow $ Drillmomente haben grosse Momente und konzentrierte Reaktionen im Eckbereich zur Folge \\
-			\includegraphics[width=0.3\linewidth]{images/DW5Querdehnung.PNG} 
+			\includegraphics[width=0.5\linewidth]{images/DW5Querdehnung.PNG} 
 			
 			$ \rightarrow $ Falls keine Eckkräft aufgenommen werden können, entstehen kleinere Drillmomente und grössere Feldmoment \\
-			\includegraphics[width=0.3\linewidth]{images/DW6Querdehnung.PNG}
+			\includegraphics[width=0.5\linewidth]{images/DW6Querdehnung.PNG}
 			
-			$ \rightarrow $ Insbesondere Decken über dem obersten Geschoss können öft nicht in der Ecke verankert werden
+			$ \rightarrow $ Insbesondere Decken über dem obersten Geschoss können öft nicht in der Ecke verankert werden \\
 			
+			\textbf{Annahme: Platte mit elastischer Biegesteifigkeit, ohne Drillsteifigkeitm Durchbiegungsverträglichkeit an jedem Punkt erfüllt}
+			
+			$ \rightarrow $ Momente in Feldmitte $ m_x = m_y = \frac{q \cdot l^2}{12} \Rightarrow $ viel grössere Momente und Durchbiegung \\
 		
 	\end{minipage}
 	\begin{minipage}{0.5\linewidth}
 		
-		\textbf{Annahme: Platte mit elastischer Biegesteifigkeit, ohne Drillsteifigkeitm Durchbiegungsverträglichkeit an jedem Punkt erfüllt}
-		
-		$ \rightarrow $ Momente in Feldmitte $ m_x = m_y = \frac{q \cdot l^2}{12} \Rightarrow $ viel grössere Momente und Durchbiegung \\
+
 		
 		\textbf{Durchlaufende Platten:}
 			\begin{itemize}
@@ -164,6 +179,14 @@
 		
 		\includegraphics[width=\linewidth]{images/DW7Auflagerreaktion.PNG}
 		
+		
+		durchgehende Wände: $ q_i = A_i \frac{1}{l} q_d \frac{1}{1m} [\frac{kN}{m^l} ] \rightarrow \cdot l [kN] $ \\
+		
+		mit z.B. Fenster: $ q_i = A_i \frac{l_i}{l} q_d \frac{1}{1m} [\frac{kN}{m^l} ]  \rightarrow \cdot l_x [kN] $
+		
+		
+		\includegraphics[width=0.7\linewidth]{images/DW8Auflagerlange.PNG}
+		
 	\end{minipage}
 
 %	\begin{minipage}{0.5\linewidth}
@@ -176,8 +199,11 @@
 %		
 %		
 %	\end{minipage}
-	\begin{minipage}{0.5\linewidth}
-		
+	\begin{minipage}{\linewidth}
+		\begin{multicols}{2}
+			
+			
+
 		\subsubsection{Bewehrung}
 		
 		Querkraftbemessung: SIA 262 4.3.3.1.3 $ \rightarrow $ Gl. 35 erfüllt, Mindestbewehrung bei dünnen Platten nicht nötig \\
@@ -203,5 +229,5 @@
 				
 			\end{itemize}
 		
-		
+		\end{multicols}
 	\end{minipage}
